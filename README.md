@@ -10,9 +10,9 @@ This project is a Spring Boot application designed to determine toll plazas betw
 
 2. **Start PostgreSQL & Redis in Docker** 🐳</br>
    docker-compose up -d</br>
-        a. PostgreSQL → localhost:5432</br>
-        b. Redis Cache → localhost:6379</br>
-        c. PGAdmin UI → http://localhost:5050</br></br>
+        a. PostgreSQL → **localhost:5432**</br>
+        b. Redis Cache → **localhost:6379**</br>
+        c. PGAdmin UI → **http://localhost:5050**</br></br>
 
 3. **Build & Run the Project**⚙️**</br>
    ./gradlew clean build  </br>
@@ -25,12 +25,13 @@ This project is a Spring Boot application designed to determine toll plazas betw
    curl -X 'POST' **'http://localhost:8080/api/v1/toll-plazas'** -H 'Content-Typ</br></br>
 
 5. **SonarQube Configuration (Code Quality & Test Coverage)** 📊</br>
-   a. Running SonarQube Installed on Your Machine</br>
+   1. Running SonarQube Installed on Your Machine</br>
       1. Start SonarQube manually if it's not running.</br>
       2. Configure pom.xml for SonarQube.</br>
       3. Run SonarQube Analysis:  ./gradlew sonarqube</br>
       4. View Reports in Browser: Open http://localhost:9000/dashboard?id=TollPlazaFinder</br>
-   b. Running SonarQube in Docker</br>
+      
+   2. Running SonarQube in Docker</br>
       1. Start SonarQube in Docker:<br>
          docker run -d --name sonarqube -p 9000:9000 sonarqube<br>
       2. Run the Analysis:<br>
