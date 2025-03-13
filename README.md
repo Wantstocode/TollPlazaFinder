@@ -15,8 +15,8 @@ This project is a Spring Boot application designed to determine toll plazas betw
       3. PGAdmin UI → **http://localhost:5050**</br></br>
 
 3. **Build & Run the Project**⚙️</br>
-   ./gradlew clean build  </br>
-   ./gradlew bootRun</br>
+   ./mvnw clean package </br>
+   ./mvnw spring-boot:run </br>
    The app will start at **http://localhost:8080** 🎉</br></br>
 
 4. **API Testing**📡</br>
@@ -29,7 +29,7 @@ This project is a Spring Boot application designed to determine toll plazas betw
       1. Start SonarQube manually if it's not running.</br>
       2. Configure pom.xml for SonarQube.</br>
       3. Run SonarQube Analysis:<br>
-          ./gradlew sonarqube</br>
+          ./mvnw sonar:sonar  </br>
       4. View Reports in Browser:<br>
           Open http://localhost:9000/dashboard?id=TollPlazaFinder</br>
       
@@ -37,7 +37,7 @@ This project is a Spring Boot application designed to determine toll plazas betw
       1. Start SonarQube in Docker:<br>
           docker run -d --name sonarqube -p 9000:9000 sonarqube<br>
       2. Run the Analysis:<br>
-          ./gradlew sonarqube<br>
+          ./mvnw sonar:sonar  <br>
       3. Check Reports:<br>
           Open http://localhost:9000/dashboard?id=TollPlazaFinder<br>
       
