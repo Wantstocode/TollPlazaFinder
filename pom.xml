@@ -33,8 +33,8 @@
 		<sonar.host.url>http://localhost:9000</sonar.host.url>
 		<sonar.language>java</sonar.language>
 		<sonar.sources>src/main/java</sonar.sources>
-		<sonar.login>admin</sonar.login>
-		<sonar.password>Sonarqube@14</sonar.password>
+		<sonar.login>{your_sonarqube_username}</sonar.login>
+		<sonar.password>{your_sonarqube_password}</sonar.password>
 		<sonar.tests>src/test/java</sonar.tests>
 		<sonar.java.binaries>target/classes</sonar.java.binaries>
 		<sonar.java.test.binaries>target/test-classes</sonar.java.test.binaries>
