@@ -9,18 +9,35 @@ This project is a Spring Boot application designed to determine toll plazas betw
    cd TollPlazaFinder</br></br>
 
 2. **Start PostgreSQL & Redis in Docker** 🐳</br>
-docker-compose up -d</br></br>
+   docker-compose up -d</br>
+        a. PostgreSQL → localhost:5432</br>
+        b. Redis Cache → localhost:6379</br>
+        c. PGAdmin UI → http://localhost:5050</br></br>
 
 3. **Build & Run the Project**⚙️**</br>
-./gradlew clean build  </br>
-./gradlew bootRun</br>
-The app will start at **http://localhost:8080** 🎉</br></br>
+   ./gradlew clean build  </br>
+   ./gradlew bootRun</br>
+    The app will start at **http://localhost:8080** 🎉</br></br>
 
 4. **API Testing**📡</br>
-Swagger UI →**http://localhost:8080/swagger-ui/index.html**</br>
-Postman Example:</br>
-curl -X 'POST' **'http://localhost:8080/api/v1/toll-plazas'** -H 'Content-Typ</br></br>
+   Swagger UI →**http://localhost:8080/swagger-ui/index.html**</br>
+   Postman Example:</br>
+   curl -X 'POST' **'http://localhost:8080/api/v1/toll-plazas'** -H 'Content-Typ</br></br>
 
+5. **SonarQube Configuration (Code Quality & Test Coverage)** 📊</br>
+   a. Running SonarQube Installed on Your Machine</br>
+      1. Start SonarQube manually if it's not running.</br>
+      2. Configure pom.xml for SonarQube.</br>
+      3. Run SonarQube Analysis:  ./gradlew sonarqube</br>
+      4. View Reports in Browser: Open http://localhost:9000/dashboard?id=TollPlazaFinder</br>
+   b. Running SonarQube in Docker</br>
+      1. Start SonarQube in Docker:<br>
+         docker run -d --name sonarqube -p 9000:9000 sonarqube<br>
+      2. Run the Analysis:<br>
+         ./gradlew sonarqube<br>
+      3. Check Reports:<br>
+         Open http://localhost:9000/dashboard?id=TollPlazaFinder<br>
+      
 
 ## Swagger UI - API Documentation
 ![Screenshot (101)](https://github.com/user-attachments/assets/e86294c0-7a63-48c4-b323-d68cb51acf7d)
