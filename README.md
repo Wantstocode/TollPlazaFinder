@@ -10,11 +10,11 @@ This project is a Spring Boot application designed to determine toll plazas betw
 
 2. **Start PostgreSQL & Redis in Docker** 🐳</br>
    docker-compose up -d</br>
-      1. PostgreSQL → **localhost:5432**</br>
-      2. Redis Cache → **localhost:6379**</br>
+      1. PostgreSQL → **localhost:5432**
+      2. Redis Cache → **localhost:6379**
       3. PGAdmin UI → **http://localhost:5050**</br></br>
 
-3. **Build & Run the Project**⚙️**</br>
+3. **Build & Run the Project**⚙️</br>
    ./gradlew clean build  </br>
    ./gradlew bootRun</br>
    The app will start at **http://localhost:8080** 🎉</br></br>
