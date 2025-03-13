@@ -1,7 +1,8 @@
 # TollPlazaFinder
-This project is a Spring Boot application designed to determine toll plazas between two Indian pincodes. It integrates external APIs for route calculations, uses PostgreSQL (Dockerized) for data storage, and employs spatial queries for toll plaza identification.
+This project is a Spring Boot application designed to determine toll plazas between two Indian pincodes. It integrates external APIs for route calculations, uses PostgreSQL (Dockerized) for data storage, and employs spatial queries for toll plaza identification.</br></br>
 
-🚀 How to Run the Project:
+## 🚀 How to Run the Project:
+
 📥 1. Clone the Repository
 git clone https://github.com/Wantstocode/TollPlazaFinder.git
 cd TollPlazaFinder
