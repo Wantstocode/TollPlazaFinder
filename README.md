@@ -6,13 +6,13 @@ This project is a Spring Boot application designed to determine toll plazas betw
 
 **📥 1. Clone the Repository**</br>
 git clone https://github.com/Wantstocode/TollPlazaFinder.git</br>
-cd TollPlazaFinder</br></br></br>
+cd TollPlazaFinder</br></br>
 **🐳 2. Start PostgreSQL in Docker**</br>
-docker-compose up -d</br></br></br>
+docker-compose up -d</br></br>
 **⚙️ 3. Build & Run the Project**</br>
 ./gradlew clean build  </br>
-./gradlew bootRun</br></br>
-The app will start at **http://localhost:8080** 🎉</br></br></br>
+./gradlew bootRun</br>
+The app will start at **http://localhost:8080** 🎉</br></br>
 **📡 4. API Testing**</br>
 Swagger UI →**http://localhost:8080/swagger-ui/index.html**</br>
 Postman Example:</br>
